@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>M N M Basith | Frontend Developer & Web Designer</title>
+  <meta name="title" content="M N M Basith | Frontend Developer & Web Designer">
+  <meta name="description" content="Portfolio of M N M Basith, a skilled Frontend Developer, Web Designer, and Student from Kurunegala, Sri Lanka. Specializing in HTML5, CSS3, JavaScript, and WordPress.">
+  <meta name="keywords" content="M N M Basith, Frontend Developer, Web Designer, Portfolio, Kurunegala Sri Lanka, HTML5, CSS3, JavaScript, WordPress, Web Development">
+  <meta name="author" content="M N M Basith">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/Basith514/Portfolio">
+  <meta property="og:title" content="M N M Basith | Frontend Developer & Web Designer">
+  <meta property="og:description" content="Explore modern web design, responsive frontend projects, and digital experiences crafted with pure HTML, CSS, and Vanilla JavaScript.">
+  <meta property="og:image" content="images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2300f2fe'/><text x='50%' y='62%' font-family='sans-serif' font-weight='800' font-size='55' fill='%23070b14' text-anchor='middle'>B</text></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background Canvas & Glow Orbs -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       1. Navigation Bar
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="logo" aria-label="M N M Basith - Return to top">
+        <span class="logo-badge">B</span>
+        <span class="logo-name">Basith<span class="logo-code">.dev</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions: Theme Toggle & Mobile Hamburger -->
+      <div class="nav-actions">
+        <!-- Theme Switcher Button -->
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <!-- Sun Icon (for dark mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (for light mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="hamburger" id="hamburger-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         2. Hero Section
+         ========================================================================== -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Content -->
+          <div class="hero-content">
+            
+            <div class="hero-greeting-pill reveal">
+              <span class="hero-pulse-dot" aria-hidden="true"></span>
+              <span>Available for Freelance & Projects</span>
+            </div>
+
+            <h1 class="hero-name reveal reveal-delay-1">
+              Hi, I'm <span class="gradient-text">M N M Basith</span>
+            </h1>
+
+            <div class="hero-typing-wrapper reveal reveal-delay-2" aria-live="polite">
+              <span>I build as a</span>
+              <span class="hero-typed-text" id="typed-text"></span>
+              <span class="typing-cursor" aria-hidden="true"></span>
+            </div>
+
+            <p class="hero-description reveal reveal-delay-3">
+              A passionate Frontend Developer, Web Designer, and student based in <strong>Kurunegala, Sri Lanka</strong>. Dedicated to building responsive, pixel-perfect, and accessible web experiences with clean code and cutting-edge visual aesthetics.
+            </p>
+
+            <div class="hero-cta-group reveal reveal-delay-4">
+              <a href="#projects" class="btn btn-primary" id="hero-view-projects">
+                <span>View My Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary" id="hero-contact-me">
+                <span>Contact Me</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="social-links reveal reveal-delay-4" aria-label="Social media profiles">
+              <!-- GitHub -->
+              <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit my GitHub profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+
+              <!-- LinkedIn Placeholder -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit my LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+
+              <!-- Direct Email -->
+              <a href="mailto:basithmnm37@gmail.com" class="social-link" aria-label="Send me an email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+
+              <!-- Location / Sri Lanka -->
+              <a href="#about" class="social-link" aria-label="Based in Kurunegala, Sri Lanka" title="Kurunegala, Sri Lanka">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual: Portrait with Glowing Backdrop & Floating Badges -->
+          <div class="hero-visual reveal">
+            <div class="hero-avatar-wrapper">
+              <div class="hero-avatar-glow" aria-hidden="true"></div>
+
+              <!-- Top Floating Badge -->
+              <div class="hero-floating-badge hero-floating-badge-top" aria-hidden="true">
+                <div class="badge-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <div>
+                  <div class="badge-text-title">Clean Code</div>
+                  <div class="badge-text-sub">HTML • CSS • JS</div>
+                </div>
+              </div>
+
+              <!-- Main Avatar Frame -->
+              <div class="hero-avatar-frame">
+                <img src="images/profile.jpg" alt="M N M Basith - Frontend Developer Portrait" class="hero-avatar-img" width="420" height="420" loading="eager">
+              </div>
+
+              <!-- Bottom Floating Badge -->
+              <div class="hero-floating-badge hero-floating-badge-bottom" aria-hidden="true">
+                <div class="badge-icon" style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.12);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <div>
+                  <div class="badge-text-title">100% Responsive</div>
+                  <div class="badge-text-sub">Mobile-First UI</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. About Me Section
+         ========================================================================== -->
+    <section class="section" id="about" aria-label="About Me">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-badge">Get To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">My Journey</span></h2>
+          <p class="section-subtitle">
+            Discover my background, technical passions, and commitment to creating intuitive web interfaces.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Bio Column -->
+          <div class="about-bio-col reveal">
+            <h3 class="gradient-text" style="font-size: 1.6rem; font-weight: 700; margin-bottom: 1rem;">
+              Crafting Modern Web Experiences
+            </h3>
+            
+            <p class="about-bio-text">
+              I am <span class="about-bio-highlight">M N M Basith</span>, an energetic Frontend Developer, Web Designer, and student located in <strong>Kurunegala, Sri Lanka</strong>. I bridge the gap between creative visual design and robust web architecture to turn imaginative concepts into interactive realities.
+            </p>
+
+            <p class="about-bio-text">
+              My core expertise revolves around standard-compliant <strong>HTML5, CSS3, Vanilla JavaScript, and WordPress development</strong>. Additionally, having completed studies in Ethical Hacking, Graphic Design, and Digital Marketing, I look at every project through the lenses of usability, search engine visibility, aesthetics, and cyber hygiene.
+            </p>
+
+            <!-- Quick Details Grid -->
+            <div class="about-info-grid">
+              <div class="about-info-item">
+                <span class="about-info-label">Name</span>
+                <span class="about-info-value">M N M Basith</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-label">Location</span>
+                <span class="about-info-value">Kurunegala, Sri Lanka</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-label">Email</span>
+                <span class="about-info-value">basithmnm37@gmail.com</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-label">Availability</span>
+                <span class="about-info-value" style="color: var(--accent-emerald);">Open to Work / Freelance</span>
+              </div>
+            </div>
+
+            <!-- Download CV CTA -->
+            <div class="about-cta-row">
+              <a href="assets/cv.pdf" download="M_N_M_Basith_CV.pdf" class="btn btn-primary" id="download-cv-btn" title="Download Basith's Curriculum Vitae">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download CV (PDF)</span>
+              </a>
+
+              <a href="#contact" class="btn btn-outline">
+                <span>Hire Me</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Stats Grid Column -->
+          <div class="about-stats-col reveal reveal-delay-2">
+            <div class="stats-grid">
+              
+              <!-- Stat Card 1 -->
+              <div class="glass-card stat-card">
+                <div class="stat-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <div class="stat-number" data-target="15" data-suffix="+">0</div>
+                <div class="stat-title">Completed Projects</div>
+              </div>
+
+              <!-- Stat Card 2 -->
+              <div class="glass-card stat-card">
+                <div class="stat-icon" style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="stat-number" data-target="1200" data-suffix="+">0</div>
+                <div class="stat-title">Hours of Coding</div>
+              </div>
+
+              <!-- Stat Card 3 -->
+              <div class="glass-card stat-card">
+                <div class="stat-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                <div class="stat-title">Core Competencies</div>
+              </div>
+
+              <!-- Stat Card 4 -->
+              <div class="glass-card stat-card">
+                <div class="stat-icon" style="color: var(--accent-pink); background: rgba(236, 72, 153, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </div>
+                <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                <div class="stat-title">Client Dedication</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. Skills Section
+         ========================================================================== -->
+    <section class="section" id="skills" aria-label="Technical Skills">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-badge">Technical Mastery</span>
+          <h2 class="section-title">My Skills & <span class="gradient-text">Expertise</span></h2>
+          <p class="section-subtitle">
+            A comprehensive overview of my frontend toolkit, styling proficiencies, content management, and auxiliary tech disciplines.
+          </p>
+        </div>
+
+        <!-- Skills Cards Grid with Animated Progress Bars -->
+        <div class="skills-grid">
+          
+          <!-- Skill: HTML5 -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-meta">
+                <div class="skill-icon-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <div>
+                  <h3 class="skill-name">HTML5 Semantic Structure</h3>
+                  <span class="skill-desc">Accessible, SEO-Ready & Clean DOM</span>
+                </div>
+              </div>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-bar-bg" aria-label="HTML5 proficiency 95%">
+              <div class="skill-bar-fill" data-percent="95%"></div>
+            </div>
+          </div>
+
+          <!-- Skill: CSS3 -->
+          <div class="glass-card skill-card reveal reveal-delay-1">
+            <div class="skill-header">
+              <div class="skill-meta">
+                <div class="skill-icon-wrapper" style="color: var(--accent-blue); background: rgba(56, 189, 248, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path></svg>
+                </div>
+                <div>
+                  <h3 class="skill-name">CSS3 & Modern Styling</h3>
+                  <span class="skill-desc">Flexbox, Grid, Glassmorphism, Animations</span>
+                </div>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-bar-bg" aria-label="CSS3 proficiency 92%">
+              <div class="skill-bar-fill" data-percent="92%" style="background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Vanilla JavaScript -->
+          <div class="glass-card skill-card reveal reveal-delay-2">
+            <div class="skill-header">
+              <div class="skill-meta">
+                <div class="skill-icon-wrapper" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"></path><path d="M8 6l-6 6 6 6"></path></svg>
+                </div>
+                <div>
+                  <h3 class="skill-name">Vanilla JavaScript (ES6+)</h3>
+                  <span class="skill-desc">DOM Manipulation, APIs, Async, Events</span>
+                </div>
+              </div>
+              <span class="skill-percent">86%</span>
+            </div>
+            <div class="skill-bar-bg" aria-label="JavaScript proficiency 86%">
+              <div class="skill-bar-fill" data-percent="86%" style="background: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);"></div>
+            </div>
+          </div>
+
+          <!-- Skill: WordPress -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-meta">
+                <div class="skill-icon-wrapper" style="color: var(--accent-cyan); background: rgba(0, 242, 254, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle></svg>
+                </div>
+                <div>
+                  <h3 class="skill-name">WordPress & CMS</h3>
+                  <span class="skill-desc">Theme Customization, Plugins, E-commerce</span>
+                </div>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-bg" aria-label="WordPress proficiency 90%">
+              <div class="skill-bar-fill" data-percent="90%"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Responsive Web Design -->
+          <div class="glass-card skill-card reveal reveal-delay-1">
+            <div class="skill-header">
+              <div class="skill-meta">
+                <div class="skill-icon-wrapper" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div>
+                  <h3 class="skill-name">Responsive Web Design</h3>
+                  <span class="skill-desc">Mobile-First, Fluid Scaling, Cross-Browser</span>
+                </div>
+              </div>
+              <span class="skill-percent">96%</span>
+            </div>
+            <div class="skill-bar-bg" aria-label="Responsive Design proficiency 96%">
+              <div class="skill-bar-fill" data-percent="96%" style="background: var(--gradient-emerald);"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="glass-card skill-card reveal reveal-delay-2">
+            <div class="skill-header">
+              <div class="skill-meta">
+                <div class="skill-icon-wrapper" style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line></svg>
+                </div>
+                <div>
+                  <h3 class="skill-name">Git & GitHub</h3>
+                  <span class="skill-desc">Branching, Version Control, Open Source</span>
+                </div>
+              </div>
+              <span class="skill-percent">84%</span>
+            </div>
+            <div class="skill-bar-bg" aria-label="Git and GitHub proficiency 84%">
+              <div class="skill-bar-fill" data-percent="84%" style="background: var(--gradient-accent);"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Graphic Design & UI/UX -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-meta">
+                <div class="skill-icon-wrapper" style="color: var(--accent-pink); background: rgba(236, 72, 153, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"></circle><circle cx="17.5" cy="10.5" r=".5"></circle><circle cx="8.5" cy="7.5" r=".5"></circle><circle cx="6.5" cy="12.5" r=".5"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg>
+                </div>
+                <div>
+                  <h3 class="skill-name">Graphic & UI/UX Design</h3>
+                  <span class="skill-desc">Visual Hierarchy, Color Systems, Wireframing</span>
+                </div>
+              </div>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar-bg" aria-label="Graphic and UI UX Design proficiency 82%">
+              <div class="skill-bar-fill" data-percent="82%" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Ethical Hacking Fundamentals -->
+          <div class="glass-card skill-card reveal reveal-delay-1">
+            <div class="skill-header">
+              <div class="skill-meta">
+                <div class="skill-icon-wrapper" style="color: var(--accent-cyan); background: rgba(0, 242, 254, 0.1);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <div>
+                  <h3 class="skill-name">Ethical Hacking & Web Security</h3>
+                  <span class="skill-desc">OWASP Principles, Input Sanitization, HTTPS</span>
+                </div>
+              </div>
+              <span class="skill-percent">76%</span>
+            </div>
+            <div class="skill-bar-bg" aria-label="Ethical Hacking proficiency 76%">
+              <div class="skill-bar-fill" data-percent="76%" style="background: var(--gradient-primary);"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. Projects Section
+         ========================================================================== -->
+    <section class="section" id="projects" aria-label="Portfolio Projects">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-badge">Recent Creations</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Portfolio Work</span></h2>
+          <p class="section-subtitle">
+            Explore a curated selection of responsive web apps, WordPress implementations, and interactive tools built with meticulous attention to detail.
+          </p>
+        </div>
+
+        <!-- Project Filtering Tabs -->
+        <div class="project-filters reveal" role="tablist" aria-label="Project category filters">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="wordpress" role="tab" aria-selected="false">WordPress</button>
+          <button type="button" class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend Web</button>
+          <button type="button" class="filter-btn" data-filter="web-app" role="tab" aria-selected="false">Web Apps</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Custom WordPress Business Agency -->
+          <article class="glass-card project-card reveal" data-category="wordpress">
+            <div class="project-thumbnail-wrapper">
+              <img src="images/project1.jpg" alt="WordPress Business Agency Website Mockup" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="View GitHub Repository" aria-label="View WordPress Project Source Code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="overlay-btn" title="Request Live Demonstration" aria-label="Request Live Demo">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category-tag">WordPress • Business</span>
+              <h3 class="project-title">Custom WordPress Business Agency</h3>
+              <p class="project-description">
+                A fully custom, responsive agency website built on WordPress with custom block designs, performance optimization, SEO metadata, and dynamic client portfolio showcasing.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span>GitHub Code</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <a href="#contact" class="project-link-btn" style="color: var(--accent-cyan);">
+                  <span>Live Preview</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Modern Developer Portfolio Showcase -->
+          <article class="glass-card project-card reveal reveal-delay-1" data-category="frontend">
+            <div class="project-thumbnail-wrapper">
+              <img src="images/project2.jpg" alt="Developer Portfolio Interface Mockup" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/Basith514/Portfolio" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="View GitHub Repository" aria-label="View Source Code on GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#home" class="overlay-btn" title="View Current Website" aria-label="Live Demo Link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category-tag">Frontend • Showcase</span>
+              <h3 class="project-title">Interactive Personal Portfolio</h3>
+              <p class="project-description">
+                A high-speed, modern personal portfolio website built with pure semantic HTML5, CSS custom properties, glassmorphism, dynamic typing, and zero framework overhead.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">Vanilla CSS3</span>
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">Glassmorphism</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Basith514/Portfolio" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span>GitHub Code</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <a href="#home" class="project-link-btn" style="color: var(--accent-cyan);">
+                  <span>Current Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: University Academic Portal Website -->
+          <article class="glass-card project-card reveal reveal-delay-2" data-category="frontend">
+            <div class="project-thumbnail-wrapper">
+              <img src="images/project3.jpg" alt="University Academic Portal Interface Mockup" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="View GitHub Repository" aria-label="View Source Code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="overlay-btn" title="Live Demo" aria-label="Live Demo Link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category-tag">Education • Portal</span>
+              <h3 class="project-title">University Academic Portal Website</h3>
+              <p class="project-description">
+                A multi-page responsive academic portal designed for students and faculties, complete with course schedules, interactive grading dashboards, and campus announcement boards.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Accessibility</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span>GitHub Code</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <a href="#contact" class="project-link-btn" style="color: var(--accent-cyan);">
+                  <span>Live Preview</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: SaaS Analytics Landing Page -->
+          <article class="glass-card project-card reveal" data-category="frontend">
+            <div class="project-thumbnail-wrapper">
+              <img src="images/project4.jpg" alt="SaaS Analytics Landing Page Interface Mockup" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="View GitHub Repository" aria-label="View Source Code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="overlay-btn" title="Live Demo" aria-label="Live Demo Link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category-tag">Frontend • Conversion</span>
+              <h3 class="project-title">Modern SaaS Analytics Landing Page</h3>
+              <p class="project-description">
+                A high-converting SaaS product landing page packed with dark mode aesthetics, dynamic pricing cards, testimonial carousels, and responsive interactive dashboards.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Variables</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Keyframe FX</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span>GitHub Code</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <a href="#contact" class="project-link-btn" style="color: var(--accent-cyan);">
+                  <span>Live Preview</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Interactive Weather Application -->
+          <article class="glass-card project-card reveal reveal-delay-1" data-category="web-app">
+            <div class="project-thumbnail-wrapper">
+              <img src="images/project5.jpg" alt="Weather Forecast Application Mockup" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="View GitHub Repository" aria-label="View Source Code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="overlay-btn" title="Live Demo" aria-label="Live Demo Link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category-tag">Web App • API</span>
+              <h3 class="project-title">Glassmorphism Weather Forecast App</h3>
+              <p class="project-description">
+                A modern client-side weather app featuring real-time city search, 5-day forecasts, atmospheric indicators, dynamic weather backdrops, and geolocation support.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">Fetch API</span>
+                <span class="tech-tag">Async / Await</span>
+                <span class="tech-tag">CSS Glass</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span>GitHub Code</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <a href="#contact" class="project-link-btn" style="color: var(--accent-cyan);">
+                  <span>Live Preview</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: TaskFlow Kanban & To-Do List Application -->
+          <article class="glass-card project-card reveal reveal-delay-2" data-category="web-app">
+            <div class="project-thumbnail-wrapper">
+              <img src="images/project6.jpg" alt="TaskFlow Kanban Productivity Suite Mockup" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="View GitHub Repository" aria-label="View Source Code">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#contact" class="overlay-btn" title="Live Demo" aria-label="Live Demo Link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category-tag">Web App • Productivity</span>
+              <h3 class="project-title">TaskFlow Kanban & To-Do Suite</h3>
+              <p class="project-description">
+                A rich productivity and task management suite built with Vanilla JS, featuring drag-and-drop status columns, tag filtering, LocalStorage persistence, and progress indicators.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">LocalStorage</span>
+                <span class="tech-tag">Drag & Drop</span>
+                <span class="tech-tag">CSS Grid</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span>GitHub Code</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <a href="#contact" class="project-link-btn" style="color: var(--accent-cyan);">
+                  <span>Live Preview</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. Education & Certifications Section
+         ========================================================================== -->
+    <section class="section" id="education" aria-label="Education and Certifications">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-badge">Academic Milestones</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">
+            A chronological timeline of my qualifications, specialized technical diplomas, and ongoing learning path.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1: G.C.E. Advanced Level (A/L) -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">G.C.E. Advanced Level (A/L)</h3>
+                <span class="timeline-date-badge">Secondary Education</span>
+              </div>
+              <div class="timeline-institution">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                <span>Department of Examinations, Sri Lanka</span>
+              </div>
+              <p class="timeline-desc">
+                Successfully completed Advanced Level education with strong focus on analytical thinking, mathematics, and technological comprehension, building the foundation for programming and software design.
+              </p>
+              <div class="timeline-skills-list">
+                <span class="timeline-skill-pill">Critical Analysis</span>
+                <span class="timeline-skill-pill">Mathematical Logic</span>
+                <span class="timeline-skill-pill">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: ESOFT Metro Campus Diploma in English -->
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Diploma in English</h3>
+                <span class="timeline-date-badge">Professional Diploma</span>
+              </div>
+              <div class="timeline-institution">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <span>ESOFT Metro Campus - Kurunegala</span>
+              </div>
+              <p class="timeline-desc">
+                Intensive diploma program focusing on professional business communication, technical documentation, verbal presentations, and fluent English language proficiency for global collaboration.
+              </p>
+              <div class="timeline-skills-list">
+                <span class="timeline-skill-pill">Professional English</span>
+                <span class="timeline-skill-pill">Technical Writing</span>
+                <span class="timeline-skill-pill">Client Communication</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Ethical Hacking & Cybersecurity -->
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Ethical Hacking & Cybersecurity Fundamentals</h3>
+                <span class="timeline-date-badge">Security Certification</span>
+              </div>
+              <div class="timeline-institution">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Information Security Training Academy</span>
+              </div>
+              <p class="timeline-desc">
+                Gained solid grounding in defensive web application security, vulnerability assessment, penetration testing concepts, network protection, and implementing secure coding standards.
+              </p>
+              <div class="timeline-skills-list">
+                <span class="timeline-skill-pill">Web App Security</span>
+                <span class="timeline-skill-pill">Vulnerability Scans</span>
+                <span class="timeline-skill-pill">OWASP Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: Digital Marketing & SEO Strategy -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Digital Marketing & SEO Certification</h3>
+                <span class="timeline-date-badge">Marketing Specialist</span>
+              </div>
+              <div class="timeline-institution">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>Professional Marketing Institute</span>
+              </div>
+              <p class="timeline-desc">
+                Learned search engine optimization (SEO), social media branding, content strategies, conversion rate optimization (CRO), and organic traffic growth tactics that directly empower web development projects.
+              </p>
+              <div class="timeline-skills-list">
+                <span class="timeline-skill-pill">Search Engine Optimization</span>
+                <span class="timeline-skill-pill">Conversion Funnels</span>
+                <span class="timeline-skill-pill">Content Strategy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5: Graphic Design & Visual Communication -->
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Graphic Design & Visual Communication</h3>
+                <span class="timeline-date-badge">Design Certification</span>
+              </div>
+              <div class="timeline-institution">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m14.31 8 5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16 3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"></path></svg>
+                <span>Creative Design Studio</span>
+              </div>
+              <p class="timeline-desc">
+                Mastered typography rules, color harmony, visual ergonomics, layout balance, brand identity creation, and UI asset design for digital and print media.
+              </p>
+              <div class="timeline-skills-list">
+                <span class="timeline-skill-pill">UI/UX Principles</span>
+                <span class="timeline-skill-pill">Brand Identity</span>
+                <span class="timeline-skill-pill">Typography</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 6: G.C.E. Ordinary Level (O/L) -->
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">G.C.E. Ordinary Level (O/L)</h3>
+                <span class="timeline-date-badge">Secondary Education</span>
+              </div>
+              <div class="timeline-institution">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+                <span>Department of Examinations, Sri Lanka</span>
+              </div>
+              <p class="timeline-desc">
+                Completed secondary schooling curriculum with distinctions in English, Mathematics, and Science subjects, laying the groundwork for continuing studies in computing and technology.
+              </p>
+              <div class="timeline-skills-list">
+                <span class="timeline-skill-pill">Academic Distinction</span>
+                <span class="timeline-skill-pill">Science & Math</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. Services Section
+         ========================================================================== -->
+    <section class="section" id="services" aria-label="Services Offered">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-badge">What I Deliver</span>
+          <h2 class="section-title">Specialized <span class="gradient-text">Web Services</span></h2>
+          <p class="section-subtitle">
+            Tailored digital solutions engineered for speed, aesthetic appeal, search ranking, and effortless user interaction.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1: Frontend Development -->
+          <div class="glass-card service-card reveal">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="service-title">Frontend Web Development</h3>
+            <p class="service-description">
+              Custom web experiences crafted using standard-compliant HTML5, CSS3, and modern Vanilla JavaScript with zero unnecessary bloat for lightning-fast load times.
+            </p>
+            <ul class="service-checklist">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Clean, modular code architecture</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>W3C & SEO compliant markup</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Subtle micro-animations & transitions</li>
+            </ul>
+          </div>
+
+          <!-- Service 2: Responsive Website Design -->
+          <div class="glass-card service-card reveal reveal-delay-1">
+            <div class="service-icon-box" style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.1);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="service-title">Responsive Design & Mobile UI</h3>
+            <p class="service-description">
+              Adaptive layouts designed with fluid scaling that look breathtaking on 4K monitors, laptops, iPads, tablets, and every mobile smartphone screen size.
+            </p>
+            <ul class="service-checklist">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Mobile-first responsive methodology</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Cross-browser testing (Chrome, Safari, Edge)</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Touch-friendly ergonomics & navigation</li>
+            </ul>
+          </div>
+
+          <!-- Service 3: WordPress Development -->
+          <div class="glass-card service-card reveal reveal-delay-2">
+            <div class="service-icon-box" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.1);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="service-title">WordPress Development & CMS</h3>
+            <p class="service-description">
+              End-to-end WordPress websites built for businesses, personal brands, and stores with intuitive content management and custom styling.
+            </p>
+            <ul class="service-checklist">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Custom theme configuration & styling</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Plugin setup, security & spam protection</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Easy-to-use client editing dashboard</li>
+            </ul>
+          </div>
+
+          <!-- Service 4: Landing Page Development -->
+          <div class="glass-card service-card reveal">
+            <div class="service-icon-box" style="color: var(--accent-pink); background: rgba(236, 72, 153, 0.1);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+            </div>
+            <h3 class="service-title">Landing Page Development</h3>
+            <p class="service-description">
+              Conversion-focused landing pages engineered to captivate visitors, convey product benefits, and guide prospective customers to take prompt action.
+            </p>
+            <ul class="service-checklist">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Optimized call-to-action (CTA) buttons</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>High-speed performance scores</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Engaging hero sections with animations</li>
+            </ul>
+          </div>
+
+          <!-- Service 5: Maintenance & Speed Optimization -->
+          <div class="glass-card service-card reveal reveal-delay-1">
+            <div class="service-icon-box" style="color: var(--accent-blue); background: rgba(56, 189, 248, 0.1);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+            <h3 class="service-title">Website Maintenance & Optimization</h3>
+            <p class="service-description">
+              Continuous performance health checks, asset compression, script debugging, security patching, and ongoing updates to ensure flawless website uptime.
+            </p>
+            <ul class="service-checklist">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Speed profiling & image optimization</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Broken link & responsive bug fixes</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Regular backups & security scanning</li>
+            </ul>
+          </div>
+
+          <!-- Service 6: Graphic & UI/UX Design -->
+          <div class="glass-card service-card reveal reveal-delay-2">
+            <div class="service-icon-box" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.1);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+            </div>
+            <h3 class="service-title">Graphic Design & UI/UX Wireframing</h3>
+            <p class="service-description">
+              Creating clean visual identities, vector logos, web graphics, color schemes, and user flow mockups that give brands a distinctive, high-end digital identity.
+            </p>
+            <ul class="service-checklist">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Modern vector graphics & iconography</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Cohesive brand styling & typography</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Intuitive user experience prototyping</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. Contact Section
+         ========================================================================== -->
+    <section class="section" id="contact" aria-label="Contact Information and Form">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-badge">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">
+            Have a project idea, inquiry, or freelance opportunity? Reach out directly and let's create something extraordinary together.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details Column -->
+          <div class="contact-info-col reveal">
+            <h3 class="gradient-text" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">
+              Contact Information
+            </h3>
+            
+            <p class="contact-lead">
+              Feel free to contact me via email or follow my ongoing open-source repositories and design concepts on GitHub. I typically reply within 24 hours.
+            </p>
+
+            <div class="contact-cards-list">
+              
+              <!-- Email Card -->
+              <a href="mailto:basithmnm37@gmail.com" class="contact-info-card" title="Click to email Basith">
+                <div class="contact-icon-bubble">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Email Address</div>
+                  <div class="contact-value">basithmnm37@gmail.com</div>
+                </div>
+              </a>
+
+              <!-- Location Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon-bubble" style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <div class="contact-value">Kurunegala, Sri Lanka</div>
+                </div>
+              </div>
+
+              <!-- GitHub Profile Card -->
+              <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="contact-info-card" title="Open GitHub Profile">
+                <div class="contact-icon-bubble" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">GitHub Repository</div>
+                  <div class="contact-value">github.com/Basith514</div>
+                </div>
+              </a>
+
+              <!-- Phone Placeholder Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon-bubble" style="color: var(--accent-pink); background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Phone / WhatsApp</div>
+                  <div class="contact-value">+94 (7X) XXX XXXX <span style="font-size: 0.8rem; color: var(--text-muted);">(Available upon request)</span></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col reveal reveal-delay-2">
+            <div class="glass-card contact-form-card">
+              <h3 class="form-title">Send Me a Message</h3>
+              <p class="form-disclaimer">
+                Every field is validated in real time using vanilla JavaScript. Feel free to test the form below!
+              </p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                
+                <!-- Row 1: Name & Email -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="user-name" class="form-label">
+                      <span>Your Name</span>
+                      <span style="color: var(--accent-cyan); font-weight: 700;">*</span>
+                    </label>
+                    <input type="text" id="user-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                    <span class="error-message" id="name-error"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="user-email" class="form-label">
+                      <span>Your Email</span>
+                      <span style="color: var(--accent-cyan); font-weight: 700;">*</span>
+                    </label>
+                    <input type="email" id="user-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required autocomplete="email">
+                    <span class="error-message" id="email-error"></span>
+                  </div>
+                </div>
+
+                <!-- Row 2: Subject -->
+                <div class="form-group">
+                  <label for="user-subject" class="form-label">
+                    <span>Subject</span>
+                    <span style="color: var(--accent-cyan); font-weight: 700;">*</span>
+                  </label>
+                  <input type="text" id="user-subject" name="subject" class="form-input" placeholder="e.g. Inquiring about a new website design" required>
+                  <span class="error-message" id="subject-error"></span>
+                </div>
+
+                <!-- Row 3: Message -->
+                <div class="form-group">
+                  <div class="form-label">
+                    <div>
+                      <span>Your Message</span>
+                      <span style="color: var(--accent-cyan); font-weight: 700;">*</span>
+                    </div>
+                    <span class="char-counter" id="char-count">0/500</span>
+                  </div>
+                  <textarea id="user-message" name="message" class="form-textarea" placeholder="Describe your project, requirements, or ideas in detail..." maxlength="500" required></textarea>
+                  <span class="error-message" id="message-error"></span>
+                </div>
+
+                <!-- Submission Status Alert Banner -->
+                <div class="form-alert" id="form-alert" role="alert" aria-live="polite"></div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%;">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       9. Footer
+       ========================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#home" class="logo" aria-label="Return to top">
+            <span class="logo-badge">B</span>
+            <span class="logo-name">Basith<span class="logo-code">.dev</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            A showcase of modern web design, standard-compliant frontend engineering, and responsive user interfaces created by M N M Basith.
+          </p>
+          <div class="social-links" aria-label="Footer social links">
+            <a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:basithmnm37@gmail.com" class="social-link" aria-label="Email Me">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#projects">Featured Projects</a></li>
+            <li><a href="#education">Education & Timeline</a></li>
+            <li><a href="#services">Services Offered</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Direct Contact</h4>
+          <ul class="footer-links-list">
+            <li><a href="mailto:basithmnm37@gmail.com">basithmnm37@gmail.com</a></li>
+            <li><a href="#about">Kurunegala, Sri Lanka</a></li>
+            <li><a href="https://github.com/Basith514" target="_blank" rel="noopener noreferrer">github.com/Basith514</a></li>
+            <li><a href="assets/cv.pdf" download="M_N_M_Basith_CV.pdf">Download Curriculum Vitae</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong>M N M Basith</strong>. All rights reserved.
+        </div>
+        <div>
+          Designed & Hand-Coded with Pure HTML5, CSS3 & Vanilla JavaScript.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Scroll back to top of page" title="Back to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- External JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
